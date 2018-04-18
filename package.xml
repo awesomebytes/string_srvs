@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>string_srvs</name>
+  <version>0.0.0</version>
+  <description>The string_srvs package contains the IOString message definition
+which allows to do a service call with a request string and getting
+back a response string.</description>
+
+  <maintainer email="Sammy.Pfeiffer@student.uts.edu.au">Sammy Pfeiffer</maintainer>
+  <author email="Sammy.Pfeiffer@student.uts.edu.au">Sammy Pfeiffer</author>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>message_generation</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+
+</package>
