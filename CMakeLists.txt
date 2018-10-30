@@ -10,6 +10,7 @@ project(string_srvs)
 find_package(catkin REQUIRED COMPONENTS
   message_generation
   std_msgs
+  sensor_msgs
 )
 
 
@@ -21,12 +22,15 @@ find_package(catkin REQUIRED COMPONENTS
 add_service_files(
   FILES
     IOString.srv
+    GetImage.srv
+    GetCompressedImage.srv
 )
 
 ## Generate added messages and services with any dependencies listed here
 generate_messages(
   DEPENDENCIES
     std_msgs  # Or other packages containing msgs
+    sensor_msgs
 )
 
 ###################################
